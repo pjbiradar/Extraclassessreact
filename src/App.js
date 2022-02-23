@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Context from './Hooks/Context';
+import { Createcontext } from './Hooks/Create';
+import { Red } from './Reducer/Red';
+// import Classcomponents from './Components/Classcomponents';
+// import Functioncomp from './Components/Functioncomp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>This is useContext example</h1>
+     <Createcontext>
+       <Context/>
+
+     </Createcontext>
+
+<h1>this is useReducer</h1>
+     <Red/>
+     
+      
+    
     </div>
   );
 }
